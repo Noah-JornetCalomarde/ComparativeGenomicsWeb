@@ -1,0 +1,45 @@
+html {
+    /* font-family: system-ui; */
+    font-family: serif;
+    color: #212529;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 30vw 70vw;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "logo header"
+        "side main"
+        "footer footer";
+    min-height: 100vh;
+}
+
+.logo {
+    grid-area: logo;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f4f7;
+    padding: 0.5rem 2rem 0.5rem 1rem;
+}
+
+.header-logo {
+    height: 10vh;
+}
+
+.header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+    margin: 1rem 8rem;
+    text-align: justify;
+}

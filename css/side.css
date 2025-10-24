@@ -1,0 +1,6 @@
+.side {
+    grid-area: side;
+    background-color: #f1f4f7;
+    padding: 1rem;
+    text-align: center;
+}
