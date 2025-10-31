@@ -1,17 +1,18 @@
 html {
     /* font-family: system-ui; */
     font-family: serif;
-    color: #212529;
+    color: #333333;
 }
 
 body {
     margin: 0;
     padding: 0;
+    background-color: #F7F5F1;
 }
 
 .layout {
     display: grid;
-    grid-template-columns: 30vw 70vw;
+    grid-template-columns: 25vw 75vw;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
         "logo header"
@@ -20,18 +21,17 @@ body {
     min-height: 100vh;
 }
 
-.logo {
+.logo-div {
     grid-area: logo;
     height: 15vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f1f4f7;
     padding: 0.5rem 2rem 0.5rem 1rem;
 }
 
-.header-logo {
-    height: 10vh;
+.logo {
+    width: 18vw;
 }
 
 .header {
@@ -42,4 +42,27 @@ main {
     grid-area: main;
     margin: 1rem 8rem;
     text-align: justify;
+}
+
+.green-bg {
+    background-color: #60826E;
+}
+
+.green {
+    color: #202d25;
+}
+
+.main h1 {
+    font-size: 3rem;
+    color: #578a6a;
+}
+
+.hero {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.main h2 {
+    font-size: 1.5rem;
+    color: #578a6a;
 }

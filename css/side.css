@@ -1,6 +1,31 @@
 .side {
     grid-area: side;
-    background-color: #f1f4f7;
     padding: 1rem;
     text-align: center;
+    color: #F7F5F1;
+}  
+
+.side a {
+    color: #F7F5F1;
+}
+
+.side a:hover {
+    color: #97d8c4;
+}
+
+.recent-publications {
+    text-align: left;
+}
+
+.recent-publications p {
+    display: inline;
+}
+
+.rp-hr {
+    margin: 1rem 0rem;
+    border: 1px dashed #202d25;
+}
+
+h2 {
+    font-size: 2rem;
 }

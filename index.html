@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/home-main.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/side.css">
-    <link rel="stylesheet" href="css/main.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
     $(function(){
@@ -18,44 +18,29 @@
       $("#footer").load("templates/footer.html");
     });
     </script> 
+    <script src="js/recent-publications.js" type="module" defer></script>
+
 </head>
 <body class="layout">
-    <div class="logo">
+    <div class="logo-div green-bg">
         <a href="index.html">
             <img src="media/CG_logo.png"
                 alt="Comparative Genomics"
-                class="header-logo">
+                class="logo">
         </a>
     </div>
     <div id="header" class="header"></div>
-    <aside class="side">
+    <aside class="side green-bg">
         <h2>Recent publications</h2>
+        <div id="recent-publications"></div>
         
-        <div id="pub-container"></div>
-        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-        <script>
-        async function loadPublications() {
-          const res = await fetch('/.netlify/functions/listPublications'); // or /api/listPublications for Vercel
-          const publications = await res.json();
-          const container = document.getElementById('pub-container');
-        
-          for (const pub of publications) {
-            const mdRes = await fetch(`/publications/${pub.file}`);
-            const mdText = await mdRes.text();
-            const div = document.createElement('div');
-            div.innerHTML = `<h2>${pub.title}</h2>` + marked(mdText);
-            container.appendChild(div);
-          }
-        }
-        
-        loadPublications();
-        </script>
 
     </aside>
     <main class="main">
         <h1>Comparative Genomics Lab</h1>
+        <p class="hero">Advancing the understanding of primate and animal diversity, evolution, and conservation through cutting-edge genetics, proteomics, and biobanking research.</p>
         <p>Our main line of research is centered on the discovery of the extent of all kinds of genome variation within phenotypically different genomes. Specifically, we study genome variation (centered on CNVs), gene expression and epigenetic differences in the human species in the context of great ape evolution and other mammalian genomes such as canids. Our goal is to create an integrated view of genome evolution by studying changes in the composition, frequency, size and location at every major branch point of recent human evolution.</p>
-        <h2>Genomic variation in ape genomes</h2>
+        <h2>Genomic variation in primates</h2>
         <p>Characterizing the variation of thousands of human genomes is standard today. However, primates (our closest relatives) are the ideal set of species for studying the evolution of these features from both mechanistic and adaptive points of view. In this line of research, we use genomic approaches in humans and primates to understand the impact of variants in the evolution of every species to provide a proper perspective to the differences among species.</p>
         <h2>Epigenetics and transcriptomics of non-human primates</h2>
         <p>DNA methylation is an epigenetic modification involved in regulatory processes such as cell differentiation during development, X-chromosome inactivation, genomic imprinting and susceptibility to complex disease. However, the dynamics of DNA methylation changes between humans and their closest relatives is still poorly understood. In this project, we evaluate methylation patterns in recent human evolution. We identified a significant positive relationship between the rate of coding variation and alterations of methylation at the promoter level.</p>

@@ -1,0 +1,200 @@
+[
+	{
+		"name": "Tomas Marques-Bonet",
+		"position": "Group leader, ICREA Research Professor",
+		"education": "BSc in Biology, University of Barcelona. 2000<br>PhD in Biology, Universitat Pompeu Fabra. 2007<br>Postdoctoral researcher at UW seattle, WA under supervision of Dr. Evan Eichler supported by IOF Marie Curie fellowship. <br>",
+		"contact": "tomas.marques@upf.edu",
+		"status": "current",
+		"picture": "media/Tomas_Marques-Bonet.jpg",
+		"priority": "0"
+	},
+	{
+		"name": "Esther Lizano",
+		"position": "Postdoctoral Researcher",
+		"education": "BSc in Chemistry, University of Barcelona. 2000<br>MSc in Genetic Counseling, Pompeu Fabra University. 2013<br>PhD. Biochemistry, University of Leipzig. 2007<br>",
+		"contact": "esther.lizano@upf.edu",
+		"status": "current",
+		"picture": "media/Esther_Lizano.jpg",
+		"priority": "1"
+	},
+	{
+		"name": "Javier Prado",
+		"position": "Postdoctoral Researcher",
+		"education": "BSc in Biotechnology, Universitat de Vic. 2009<br>PhD in Biomedicine, Universitat Pompeu Fabra. 2014<br>",
+		"contact": "javier.prado@upf.edu",
+		"status": "current",
+		"picture": "media/Javier_Prado.jpg",
+		"priority": "1"
+	},
+	{
+		"name": "Alba Duch",
+		"position": "Project Manager",
+		"education": "BSc in Human Biology, Universitat Pompeu Fabra. 2003<br>PhD in Biochemistry and Molecular Biology, Universitat Autònoma de Barcelona. 2008<br>Postdoctoral researcher in Francesc Posas Laboratory in the Pompeu Fabra University and the Institute for research in Biomedicine UPF-IRB. 2022<br>",
+		"contact": "alba.duch@upf.edu",
+		"status": "current",
+		"picture": "media/Alba_Duch.jpg",
+		"priority": "1"
+	},
+	{
+		"name": "Sebastian Cuadros",
+		"position": "Postdoctoral Researcher",
+		"education": "MSc in Engineering, AgroParisTech. 2019<br>PhD.PhD in Population Genetics, Sorbonne University. 2022<br>",
+		"contact": "sebastianhans.cuadros@upf.edu",
+		"status": "current",
+		"picture": "media/Sebastian_Cuadros.jpg",
+		"priority": "2"
+	},
+	{
+		"name": "Lucas Wange",
+		"position": "Postdoctoral Researcher",
+		"education": "BSc in Biology, Ludwig-Maximilians-University Munich. 2014<br>MSc in Biology, Ludwig-Maximilians-University Munich. 2016<br>PhD in Biology, Ludwig-Maximilians-University Munich. 2022",
+		"contact": "lucasesteban.wange@upf.edu",
+		"status": "current",
+		"picture": "media/Lucas_Wange.jpg",
+		"priority": "2"
+	},
+	{
+		"name": "Léa Guyon",
+		"position": "Postdoctoral Researcher",
+		"education": "BSc in Life Sciences, École normale supérieure – PSL. 2018<br>MSc in Ecology and Evolution, École normale supérieure – PSL. 2021<br>PhD in Population genetics, Muséum national d’Histoire naturelle, Paris. 2024<br>",
+		"contact": "lea.guyon@upf.edu",
+		"status": "current",
+		"picture": "media/Léa_Guyon.jpg",
+		"priority": "2"
+	},
+	{
+		"name": "Irune Ruiz",
+		"position": "MdM Fellowship PhD Student",
+		"education": "BSc in Human Biology, Universitat Pompeu Fabra. 2016<br>MSc in Biological Anthropology, Universidad de Barcelona and Universitat Autonoma de Barcelona. 2019<br>",
+		"contact": "irune.ruiz@upf.edu",
+		"status": "current",
+		"picture": "media/Irune_Ruiz.jpg",
+		"priority": "3"
+	},
+	{
+		"name": "Nuria Hermosilla",
+		"position": "FI Fellowship PhD Student",
+		"education": "BSc in Genetics, Universitat Autònoma de Barcelona. 2019<br>MSc in Bioinformatics, University of Copenhagen. 2021<br>",
+		"contact": "nuria.hermosilla@upf.edu",
+		"status": "current",
+		"picture": "media/Nuria_Hermosilla.jpg",
+		"priority": "3"
+	},
+	{
+		"name": "Mar Crego",
+		"position": "FPI PhD Student",
+		"education": "BSc in Archaeology, Universitat Autònoma de Barcelona. 2017<br>MSc in Archaeological Science, University of Oxford. 2019<br>",
+		"contact": "mar.crego@upf.edu",
+		"status": "current",
+		"picture": "media/Mar_Crego.jpg",
+		"priority": "3"
+	},
+	{
+		"name": "Guillermo Carrillo",
+		"position": "FI PhD Student",
+		"education": "BSc in Biology, Universidad de Murcia. 2022<br>MSc in Bioinformatics, Universitat Autònoma de Barcelona. 2023<br>",
+		"contact": "guillermo.carrillo@upf.edu",
+		"status": "current",
+		"picture": "media/Guillermo_Carrillo.jpg",
+		"priority": "3"
+	},
+	{
+		"name": "Maria Torralvo",
+		"position": "FI PhD Student",
+		"education": "BSc in Biotechnology, Universidad Politécnica de Madrid. 2020<br>MSc in Bioinformatics, Universitat Pompeu Fabra. 2022<br>",
+		"contact": "maria.torralvo@upf.edu",
+		"status": "current",
+		"picture": "media/Maria_Torralvo.jpg",
+		"priority": "3"
+	},
+	{
+		"name": "Elena Asensi",
+		"position": "FI PhD Student",
+		"education": "BSc in Genetics, Universitat Autònoma de Barcelona. 2023<br>MSc in Bioinformatics, Universitat Autònoma de Barcelona. 2024<br>",
+		"contact": "elena.asensi@upf.edu",
+		"status": "current",
+		"picture": "media/Elena_Asensi.png",
+		"priority": "3"
+	},
+	{
+		"name": "Lídia Altimiras",
+		"position": "Lab Manager",
+		"education": "BSc in Biology, Universitat Autònoma de Barcelona. 1994<br>",
+		"contact": "lidia.altimiras@upf.edu",
+		"status": "current",
+		"picture": "media/Lídia_Altimiras.jpg",
+		"priority": "1"
+	},
+	{
+		"name": "Sandra Martín",
+		"position": "Laboratory technical support",
+		"education": "Higher Level Training Cycle in Clinical and Biomedical Laboratory, IFP Roger de Llúria. 2017<br>",
+		"contact": "sandra.martin@upf.edu",
+		"status": "current",
+		"picture": "media/Sandra_Martín.jpg",
+		"priority": "3"
+	},
+	{
+		"name": "Pol Alentorn",
+		"position": "Laboratory technical support",
+		"education": "Higher Level Training Cycle in Clinical and Biomedical Laboratory, Jesuïtes El Clot. 2019<br>",
+		"contact": "pol.alentorni@upf.edu",
+		"status": "current",
+		"picture": "media/Pol_Alentorn.jpg",
+		"priority": "3"
+	},
+	{
+		"name": "Georgina Martí",
+		"position": "Laboratory technical support",
+		"education": "BSc in Genetics, Universitat Autònoma de Barcelona. 2022<br>MSc in Biological Anthropology, Universitat de Barcelona. 2023<br>",
+		"contact": "georgina.martii@upf.edu",
+		"status": "current",
+		"picture": "media/Georgina_Martí.jpg",
+		"priority": "3"
+	},
+	{
+		"name": "Núria Mauri Panadero",
+		"position": "Bioinformatic Technical support",
+		"education": "BSc in Biotechnology, Universitat de Alicante. 2005<br>MSc in Bioinformatics, Universitat Autònoma de Barcelona. 2016<br>PhD in Molecular Biology. Universidad Autónoma de Madrid. 2013<br>",
+		"contact": "nuria.mauri@upf.edu",
+		"status": "current",
+		"picture": "media/Núria_Mauri_Panadero.jpg",
+		"priority": "3"
+	},
+	{
+		"name": "Noah Jornet Calomarde",
+		"position": "Bioinformatic Technical support",
+		"education": "BSc in Genetics, Universitat Autònoma de Barcelona. 2022<br>MSc in Bioinformatics, Universitat Autònoma de Barcelona. 2023<br>",
+		"contact": "noah.jornet@upf.edu",
+		"status": "current",
+		"picture": "media/Noah_Jornet_Calomarde.jpg",
+		"priority": "3"
+	},
+	{
+		"name": "Cira Martínez de Pablo",
+		"position": "Cryozoo Coordinator",
+		"education": "BSc in Biology, Universitat de Barcelona. 2000<br>",
+		"contact": "cira.martinez@upf.edu",
+		"status": "current",
+		"picture": "media/Cira_Martínez_de_Pablo.jpg",
+		"priority": "1"
+	},
+	{
+		"name": "Albert Bañeras",
+		"position": "Cryozoo Laboratory technical support",
+		"education": "BSc in Biology, Universitat de Barcelona. <br>",
+		"contact": "albert.baneras@upf.edu",
+		"status": "current",
+		"picture": "media/Albert_Bañeras.jpg",
+		"priority": "3"
+	},
+	{
+		"name": "Alejandro Sebastián Sánchez",
+		"position": "Cryozoo Laboratory technical support",
+		"education": "BSc in Biology, Universidad de Sevilla. 2022<br>MSc in Genetics and Genomics, Universitat de Barcelona. 2023<br>",
+		"contact": "alejandrosebastian.sanchez@upf.edu",
+		"status": "current",
+		"picture": "media/Alejandro_Sebastián_Sánchez.jpg",
+		"priority": "3"
+	}
+]

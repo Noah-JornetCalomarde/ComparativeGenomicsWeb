@@ -21,11 +21,32 @@ header {
 }
 
 a {
-    color: #212529;
+    color: #333333;
     text-decoration: none;
+    position: relative;
+    transition: color 0.2s;
 }
 
-a:hover {
-    color: #2e58a5;
-    text-decoration: underline;
+a.animated-underline {
+    position: relative;
+    transition: color 0.2s;
+}
+
+a.animated-underline::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #60826e;
+    transition: width 0.2s ease-in;
+}
+
+a.animated-underline:hover {
+    color: #60826e;
+}
+
+a.animated-underline:hover::after {
+    width: 100%;
 }

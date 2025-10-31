@@ -1,37 +1,37 @@
 html {
     /* font-family: system-ui; */
     font-family: serif;
-    color: #212529;
+    color: #333333;
 }
 
 body {
     margin: 0;
     padding: 0;
+    background-color: #F7F5F1;
 }
 
 .layout {
     display: grid;
-    grid-template-columns: 30vw 70vw;
+    grid-template-columns: 25vw 75vw;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
         "logo header"
-        "side main"
+        "main main"
         "footer footer";
     min-height: 100vh;
 }
 
-.logo {
+.logo-div {
     grid-area: logo;
     height: 15vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f1f4f7;
     padding: 0.5rem 2rem 0.5rem 1rem;
 }
 
-.header-logo {
-    height: 10vh;
+.logo {
+    width: 18vw;
 }
 
 .header {
@@ -42,4 +42,228 @@ main {
     grid-area: main;
     margin: 1rem 8rem;
     text-align: justify;
+}
+
+.green-bg {
+    background-color: #60826E;
+}
+
+.green {
+    color: #202d25;
+}
+
+.main h1 {
+    font-size: 3rem;
+    color: #60826e;
+}
+
+.hero {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.main h2 {
+    font-size: 1.5rem;
+    color: #60826e;
+}
+
+/* Members Page Styles */
+
+.member {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 60vw;
+    margin: auto;
+    padding: 1rem 3rem;
+    transition: background 0.3s;
+}
+
+.member:hover {
+    background: #eeeae4;
+}
+
+.img-wrapper {
+    flex-shrink: 0;
+}
+
+.img-wrapper img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.info-wrapper {
+    flex: 1;
+}
+
+
+@media (max-width: 768px) {
+    .member {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.rp-hr {
+    border: 1px dashed #202d25;
+    width: 60vw;
+    margin: auto;
+}
+
+/* Publications Page Styles */
+
+#all-publications {
+    width: 70vw;
+    margin: 0 auto;
+
+}
+
+/* Search Box */
+
+.search-container {
+    width: 70vw;
+    margin: 2rem auto;
+    margin-bottom: 3rem;
+}
+
+.search-input {
+    width: 100%;
+    padding: 0.8rem 1.2rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #a5c1af;
+}
+
+/* No Results Message */
+.no-results {
+    text-align: center;
+    color: #7b7b7b;
+    font-size: 18px;
+    font-style: italic;
+    padding: 4rem;
+}
+
+/* Year Sections */
+
+.year-section {
+    display: grid;
+    grid-template-columns: 10vw 1fr;
+    gap: 2rem;
+}
+
+.year-label {
+    position: sticky;
+    top: 0;
+    align-self: start;
+    margin-bottom: 20px;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #60826e;
+}
+
+.year-label h2 {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+    font-weight: 600;
+}
+
+.year-label h2 {
+    position: sticky;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #60826e;
+    margin: 0;
+    padding: 1rem 0 0;
+}
+
+/* Publications List */
+
+.publications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Individual Publication Card */
+.publication-item {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.publication-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Publication Title */
+.publication-item h2 {
+    margin: 0 0 1rem;
+    line-height: 1.4;
+    color: #60826e;
+}
+
+/* Metadata (authors, journal, date) */
+.publication-item > p {
+    color: #7b7b7b;
+    line-height: 1.6;
+}
+
+.publication-item .pub-journal {
+    color: #578a6a;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Abstract Text */
+.publication-item .grey {
+    color: #333333;
+    padding: 1rem 0 0;
+    line-height: 1.4;
+}
+
+/* DOI Link */
+
+a.doi-link {
+    position: relative;
+    color: #60826e;
+    transition: color 0.2s ease;
+}
+
+a.doi-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #60826e;
+    transition: width 0.2s ease-in;
+}
+
+a.doi-link:hover::after {
+    width: 100%;
+}
+
+/* Toggle Link (Show more/less) */
+.publication-item a[id$="-toggle"] {
+    display: inline-block;
+    color: #60826e;
+    transition: color 0.2s ease;
+}
+
+.publication-item a[id$="-toggle"]:hover {
+    color: #a5c1af;
 }
