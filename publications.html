@@ -4,17 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/side.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script> 
     $(function(){
       $("#header").load("templates/header.html");
+      $("#header-logo").load("templates/header-logo.html");
     });
     </script> 
+    <script src="js/all-publications.js" type="module" defer></script>
 </head>
-<body>
-    <div id="header"></div>
+<body class="layout">
+    <div id="header-logo" class="header-logo"></div>
+    <div id="header" class="header"></div>
+    <main class="main">
+        <div class="search-container">
+            <input 
+                type="text" 
+                id="publication-search" 
+                placeholder="Search publications by title, author, journal, or keyword..."
+                class="search-input"
+            />
+        </div>
+        
+        <div id="all-publications"></div>
+    </main>
+    <div id="footer" class="footer"></div>
 </body>
 </html>
