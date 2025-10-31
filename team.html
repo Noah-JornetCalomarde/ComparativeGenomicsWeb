@@ -11,10 +11,18 @@
     <script> 
     $(function(){
       $("#header").load("templates/header.html");
+      $("#header-logo").load("templates/header-logo.html");
     });
     </script> 
+    <script src="js/group-members.js" type="module" defer></script>
 </head>
-<body>
-    <div id="header"></div>
+<body class="layout">
+    <div id="header-logo" class="header-logo"></div>
+    <div id="header" class="header"></div>
+    <main class="main">
+        <h1 class="h1-members">Current group members</h1>
+        <div id="members"></div>
+    </main>
+    <div id="footer" class="footer"></div>
 </body>
 </html>

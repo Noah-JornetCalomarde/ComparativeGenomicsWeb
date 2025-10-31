@@ -69,20 +69,31 @@ main {
 
 /* Members Page Styles */
 
+.h1-members {
+    width: fit-content;
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem auto;
+    border-bottom: 3px solid #60826e;
+}
+
 .member {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 3rem;
     width: 60vw;
     margin: auto;
-    padding: 1rem 3rem;
-    transition: background 0.3s;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease, background 0.3s;
 }
 
 .member:hover {
     background: #eeeae4;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
+/* Image Wrapper */
 .img-wrapper {
     flex-shrink: 0;
 }
@@ -92,23 +103,64 @@ main {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
 }
 
+.member:hover .img-wrapper img {
+    transform: scale(1.05);
+}
+
+/* Info Wrapper */
 .info-wrapper {
     flex: 1;
+    min-width: 0; /* Prevents flex item from overflowing */
 }
 
-
-@media (max-width: 768px) {
-    .member {
-        flex-direction: column;
-        text-align: center;
-    }
+.info-wrapper h2 {
+    margin: 0 0 1rem 0;
+    line-height: 1.4;
 }
 
+.info-wrapper p {
+    margin: 1rem 0;
+    font-size: 15px;
+    color: #7b7b7b;
+    line-height: 1.6;
+}
+
+.info-wrapper p:first-of-type {
+    color: #333333;
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* Email Link */
+.info-wrapper a {
+    font-size: 16px;
+    position: relative;
+    color: #60826e;
+    transition: color 0.2s ease;
+}
+
+.info-wrapper a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #60826e;
+    transition: width 0.2s ease-in;
+}
+
+.info-wrapper a:hover::after {
+    width: 100%;
+}
+
+/* Horizontal Rule */
 .rp-hr {
-    border: 1px dashed #202d25;
+    border: 1px dashed #60826e;
     width: 60vw;
     margin: auto;
 }
