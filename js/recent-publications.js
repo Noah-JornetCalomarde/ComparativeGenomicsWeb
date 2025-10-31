@@ -1,5 +1,9 @@
 async function fetchRecentPublications() {
-    const response = await fetch('/data/publications.json');
+    const response = await fetch('data/publications.json');
+
+    if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+    }
     const rawPublications = await response.json();
     // Filter out items without a title
     const publications = rawPublications.filter(pub => pub.title && pub.title.trim() !== '');

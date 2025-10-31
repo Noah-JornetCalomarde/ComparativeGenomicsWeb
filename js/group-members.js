@@ -1,6 +1,10 @@
 async function fetchMembers() {
-    const response = await fetch('/data/members.json');
-    const rawMembers = await response.json();
+    const response = await fetch('data/members.json');
+
+    if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    const rawMembers = JSON.parse(text);
     // Filter out items without a title
     const members = rawMembers.filter(member => member.name && member.name.trim() !== '');
   
